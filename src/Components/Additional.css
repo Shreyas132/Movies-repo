@@ -159,7 +159,9 @@ ul{
   
 @media screen and (max-width: 600px) {
     .navbar{
-        justify-content: space-between;
+        justify-content: left;
+        margin-top: 0px;
+        
         
     }
     .hero{
@@ -175,13 +177,20 @@ ul{
     .dropdown {
         width: 100px;
     }
+    .nav-items{
+        display: flex;
+        margin-left: 0px;
+
+    }
     .items span{
-        margin-left:0px;
+        margin-top:1rem;
         
     }
     .items{
         left: 0px;
-        gap: 5px;
+        gap: 10px;
+        align-items: start;
+        display: flex;
     }
 
 

@@ -260,12 +260,12 @@ h1 {
 
 @media screen and (max-width: 600px) {
   .app {
-    padding: 4rem 2rem;
+    padding: 1rem 1.5rem;
   }
 
   .search {
     padding: 10px 10px;
-    width: 200px;
+    width: 250px;
     margin-left:0px;
   }
 
