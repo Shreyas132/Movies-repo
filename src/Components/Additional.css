@@ -158,8 +158,43 @@ ul{
 
   
 @media screen and (max-width: 600px) {
+    .navbar{
+        justify-content: space-between;
+        
+    }
+    .hero{
+        max-height: 100px;
+        width: 100%;
+    }
+    .hero-title{
+        font-size: 2rem;
+    }
+    .hero p{
+        display: none;
+    }
+    .dropdown {
+        width: 100px;
+    }
+    .items span{
+        margin-left:0px;
+        
+    }
     .items{
+        left: 0px;
+        gap: 5px;
+    }
+
+
+}
+@media screen and (max-width:600px) {
+    .items li:nth-child(2),
+    .items li:nth-child(3),
+    .items li:nth-child(4),
+    .items li:nth-child(5),
+    .items li:nth-child(6){
         display: none;
     }
 
+
+    
 }

@@ -117,6 +117,7 @@ const Movie = () => {
       }
 
       const selecthero = async (movie) =>{
+        setplayer(false)
         const data = await fetchvideo(movie.id)
         console.log(data)
         setheromovie(data)
@@ -128,7 +129,10 @@ const Movie = () => {
         return <><YouTube  videoId={trailer.key} 
                     opts={{
                         width: '100%',
-                        height: '100%'
+                        height: '100%',
+                        playerVars:{
+                            autoplay:1,
+                        }
                     
                     }} style={{
                         position:'absolute',
