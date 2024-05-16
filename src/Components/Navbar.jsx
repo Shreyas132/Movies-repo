@@ -17,10 +17,7 @@ const handlenavclick = (category) =>{
     <div className='navbar'>
         <div className='nav-items'>
             <ul className='items'>
-                <span style={{
-                  color:'goldenrod',
-                  fontSize:'2rem',
-                }}>Movies2Day</span>
+                <span className="logo-text">Movies2Day</span>
                 <li className={selected === 'top_rated' ? 'link active' : 'link' }onClick={()=> handlenavclick ('top_rated')}>TOP Rated</li>
                 <li className={selected === 'upcoming' ? 'link active' : 'link' }onClick={()=> handlenavclick ('upcoming')}>Upcoming</li>
                 <li className={selected === 'latest' ? 'link active' : 'link' }onClick={()=> handlenavclick ('latest')}>Latest</li>

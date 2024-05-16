@@ -102,7 +102,7 @@ h1 {
 }
 
 .container {
-  width: 100dvw;
+  width: 100vw;
   margin-top: 1rem;
   display: flex;
   justify-content: center;
@@ -265,20 +265,22 @@ h1 {
 
   .search {
     padding: 10px 10px;
-    width: 250px;
+    width: 180px;
     margin-left:0px;
   }
 
   .search input {
     font-size: 11px;
+    padding-right: 0px;
   }
 
   .search img {
-    width: 20px;
-    height: 20px;
+    width: 10px;
+    height: 10px;
   }
   .container{
     display: inline-flex;
+    padding: 0%;
   }
 
 }
@@ -294,17 +296,20 @@ h1 {
 
   .container {
     margin-top: 2rem;
+    width: 100%;
+    padding: 0%;
   }
   .movie {
-    width: 180px;
-    height: 300px;
-    margin: 0.5rem;
+    width: 160px;
+    height: 250px;
+    margin: 0.4rem;
+    padding: 0%;
   }
   h2{
     font-size: 1.5rem;
   }
   .movie div:nth-of-type(3) {
-    padding: 16px 14px 14px 14px;
+    padding: 10px 10px 8px 8px;
   }
   
   .movie div:nth-of-type(3) span {
@@ -313,7 +318,7 @@ h1 {
   
   .movie div:nth-of-type(3) h3 {
     color: white;
-    font-size: 1rem;
+    font-size: 14px;
   }
   
 }

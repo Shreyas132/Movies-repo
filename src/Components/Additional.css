@@ -154,13 +154,17 @@ ul{
 .close:active{
     transform: scale(0.8);
 }
+.logo-text{
+    color: goldenrod;
+    font-size: 2rem;
+}
   
 
   
 @media screen and (max-width: 600px) {
     .navbar{
-        justify-content: left;
         margin-top: 0px;
+        display: flex;
         
         
     }
@@ -169,30 +173,38 @@ ul{
         width: 100%;
     }
     .hero-title{
-        font-size: 2rem;
+        font-size: 1.5rem;
     }
     .hero p{
         display: none;
     }
     .dropdown {
         width: 100px;
+        margin-left: 40px;
     }
     .nav-items{
-        display: flex;
-        margin-left: 0px;
+        display: inline-flex;
+        margin: 0px;
+    }
+    ul{
+        gap: 5px;
+        margin-left: 0;
 
     }
+    .items li{
+        margin: 0px;
+        left: 0;
+    }
     .items span{
-        margin-top:1rem;
+        margin-top:2rem;
+        font-size: 1.5rem;
         
     }
     .items{
-        left: 0px;
-        gap: 10px;
         align-items: start;
-        display: flex;
+        display: inline-flex;
+        padding-left: 0px;
     }
-
 
 }
 @media screen and (max-width:600px) {
