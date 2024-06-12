@@ -187,6 +187,18 @@ const Movie = () => {
                 )
         }
         <br/>
+        <div className='prevnext'>
+                <button className='prev' disabled={currentpage === 1} onClick={() => HandlePageChange(currentpage - 1)}>
+                <span className="arrow">&lt;</span>
+                    
+                </button>
+                <span style={{color:'green',margin:'20px 5px 0px 5px'}}> Page no: {`${currentpage}`}</span>
+                <button  className="next" disabled={endindex >= movies.length} onClick={() => HandlePageChange(currentpage + 1)}>
+                <span className="arrow">&gt;</span>
+                    
+                </button>
+        </div>
+
         <hr className='line' />
         <h2 className='subhead'>Trending</h2>
         {
@@ -203,17 +215,6 @@ const Movie = () => {
                     <p>Loading...</p>
                 )
         }
-        <div className='prevnext'>
-                <button className='prev' disabled={currentpage === 1} onClick={() => HandlePageChange(currentpage - 1)}>
-                <span className="arrow">&lt;</span>
-                    
-                </button>
-                <span style={{color:'green',margin:'20px 5px 0px 5px'}}> Page no: {`${currentpage}`}</span>
-                <button  className="next" disabled={endindex >= movies.length} onClick={() => HandlePageChange(currentpage + 1)}>
-                <span className="arrow">&gt;</span>
-                    
-                </button>
-        </div>
 
         
     </div>
